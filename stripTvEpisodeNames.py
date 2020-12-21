@@ -15,7 +15,7 @@ def stripTvEpisodeNames(folderPath):
             return
 
         oldFile = folderName + "\\" + fileName
-        newFileName = fileNameFormat.group() + extension
+        newFileName = "Episode " + fileNameFormat.group() + extension
         filePath = folderName + "\\" + newFileName
         print(filePath)
         os.rename(oldFile, filePath)
